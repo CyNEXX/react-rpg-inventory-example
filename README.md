@@ -8,6 +8,8 @@ React RPG Inventory Example
 - Move items around, switch their places, throw them away;
 - Arrange items
 
+NOTE: The images used in this application are strict for exmaple purposes only and I do not own any right on any of them.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
