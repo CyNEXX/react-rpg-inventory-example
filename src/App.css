@@ -1,3 +1,15 @@
+:root {
+  --main-err-color: #96281b;
+  --main-lightbrown-color: #765d69;
+  --main-dark-color: #1a1712;
+  --main-general-table-width: 500px;
+  --main-general-cell-size: 50px;
+}
+
+/*
+border-color: var(--main-err-color);
+*/
+
 .App {
   text-align: center;
 }
@@ -36,3 +48,230 @@
     transform: rotate(360deg);
   }
 }
+
+body * {
+  color: #8a4e11 !important;
+  font-family: "dynastic-demo";
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: var(--main-general-table-width);
+}
+
+th,
+td {
+  /*  width: 100px; */
+  overflow: hidden;
+}
+
+tr {
+  height: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+td.cell {
+  position: relative;
+  background-color: #765d69;
+  color: rgb(103, 128, 159);
+  height: var(--main-general-cell-size);
+  width: var(--main-general-cell-size);
+  overflow: hidden;
+}
+
+/* .item {
+  background-color: #61dafb;
+} */
+
+.cell {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #1a1712;
+}
+
+.centered-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cell-empty {
+  background-image: url(./assets/cell.jpg);
+}
+
+td.cell-empty-info {
+  font-size: 1rem;
+}
+
+.the_oculus {
+  background-image: url(./assets/the_oculus.jpg);
+}
+
+.bovine_bardiche {
+  background-image: url(./assets/bovine_bardiche.jpg);
+}
+
+.puzzle_ring {
+  background-image: url(./assets/puzzle_ring.jpg);
+}
+
+.talrasha_pursuit {
+  background-image: url(./assets/talrasha_pursuit.jpg);
+}
+
+.btn-pickups {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  width: 20%;
+}
+
+.main-container {
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: black;
+  left: 0;
+  height: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  border: none solid none none;
+  border-color: var(--main-lightbrown-color);
+}
+
+.tools-item-button {
+  padding: 1rem;
+}
+
+.empty-cell-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.empty-cell-div > span {
+  margin-top: auto;
+  padding: 0 2px 1px 0;
+  font-size: 0.57rem;
+}
+
+.floating-window {
+  position: absolute;
+  padding: 1rem;
+  /*   width: 100px;
+  height: 300x; */
+  background-color: var(--main-dark-color);
+  padding: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.3rem;
+  border: 2px solid var(--main-dark-color);
+}
+
+.custom-border {
+  border: 2px solid var(--main-dark-color);
+}
+
+.floating-window {
+  /*   border: 5px solid var(--main-err-color) !important; */
+  padding: 1rem;
+}
+
+.unavailable-space {
+  border-color: var(--main-err-color);
+}
+
+.available-space {
+  border-color: var(--main-dark-color);
+}
+
+.celldiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cell-info-panel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cell-overlay-panel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+td.cell {
+  padding: 0;
+}
+
+.inventory-area {
+  background-image: url(./assets/desert-sand-texture.jpg);
+/*   z-index: 0; */
+}
+
+.inventory-table {
+/*   z-index: 1000; */
+}
+
+.grid-layer-table {
+  /*   visibility: hidden; */
+  width: var(--main-general-table-width);
+  height: calc(var(--main-general-cell-size) * 7);
+  position: absolute;
+  /*   top: 0;
+  left: 0; */
+/*   z-index: 2000; */
+  white-space: nowrap;
+}
+
+td.cell-grid {
+/*   pointer-events: none; */
+  opacity: 0.2;
+  position: relative;
+  padding: 0;
+  background-color: var(--main-lightbrown-color);
+  border: 1px;
+  border-style: solid;
+  border-color: var(--main-dark-color);
+  width: var(--main-general-cell-size) !important;
+  height: var(--main-general-cell-size) !important;
+  overflow: hidden;
+}
+
+.tables-container {
+  position: relative !important;
+  width: var(--main-general-table-width);
+  height: calc(var(--main-general-cell-size) * 7);
+}
+
+tr.grid-layer-tbody {
+  height: var(--main-general-cell-size);
+}
+
+.item-layer-table {
+  position: absolute;
+/*   z-index:1950; */
+}
+
+
+ 
