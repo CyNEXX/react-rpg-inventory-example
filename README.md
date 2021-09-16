@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+React RPG Inventory Example
+
+## A simple implementation of an RPG inventory.
+
+### Simulate
+- Pick up from ground (and auto place the item);
+- Pick up from other container and place wherever you want in the inventory;
+- Move items around, switch their places, throw them away;
+- Arrange items
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
